@@ -7,8 +7,9 @@ if (code) {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
       grant_type: "authorization_code",
-      client_id: "a63c9071d01e11f1bae2413778a64427",
+      client_id: "4c85f761672da2e28ccbdacc31c1dbb9",
       redirect_uri: "https://kimsanghott.github.io/auth-demo/kakao-callback.html",
+      //redirect_uri: "https://127.0.0.1:5500/kakao-callback.html",
       code: code,
     }),
   })

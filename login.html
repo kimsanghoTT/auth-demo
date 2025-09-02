@@ -13,6 +13,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="js/login.js" defer></script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.7/kakao.min.js" integrity="sha384-tJkjbtDbvoxO+diRuDtwRO9JXR7pjWnfjfRn5ePUpl7e7RJCxKCwwnfqUAdXh53p" crossorigin="anonymous"></script>
+    <script src="js/kakao/kakao_init.js" defer></script>
   </head>
   <body class="bg-blue-100 flex items-center justify-center h-screen">
     <div class="bg-white shadow-lg rounded-lg sm:w-96 w-11/12 p-6">
@@ -30,6 +32,12 @@
           class="w-full flex items-center justify-center bg-gray-800 text-white py-2 px-4 shadow-md rounded-lg hover:bg-gray-900"
         >
           <i class="fa-brands fa-github mr-2"></i>Github로 로그인
+        </button>
+        <button
+          id="kakao-login-btn"
+          class="w-full focus:outline-none"
+        >
+          <img class="w-full cursor-pointer" src="img/kakao_login_medium_wide.png" alt="kakao-login">
         </button>
       </div>
 
